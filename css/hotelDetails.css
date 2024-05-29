@@ -1,0 +1,23 @@
+
+
+
+.hotelDetailContainer{
+    margin-top: -20px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.carouselContainer{
+    background-color: rgb(249, 247, 238);
+    width: 600px;
+    height: 600px;
+}
+
+.list{
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}

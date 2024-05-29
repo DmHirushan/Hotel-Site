@@ -1,0 +1,37 @@
+.contentContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.div1{
+   
+    width: 400px;
+    background-color: rgb(228, 197, 159);
+}
+
+.roomDesc{
+   
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.carouselContainer{
+    width: 400px;
+    height: 300px;
+}
+
+.amentieslist{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.highlightslistConatiner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn-close{
+    margin-left: 480px;
+}

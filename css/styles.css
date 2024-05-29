@@ -1,0 +1,388 @@
+.headerListContainer{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.hotelName{
+    /* border: 2px solid rgb(118, 118, 232); */
+    color: rgb(26, 143, 143);
+    font-weight: bold;
+    width: 350px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerList{
+    display: flex;
+    list-style: none;
+}
+
+.headerList > li {
+  
+    font-size: 15px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wallpaper{
+    width: 100%;
+    height: 500px;
+}
+.h1{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.h4{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ul{
+    margin-left: -29px;
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+}
+.descriptionContainer{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.nameAddress{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    pointer-events: none; /* Prevents clicking on the blurred content */
+    z-index: 10000;
+}
+.specialRates{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    gap: 10px;
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    border-radius: 10px;
+    width: 400px;
+    height: 45px;
+    background-color: rgb(12, 12, 193);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.roomDesc{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.roomDetailsLink{
+    margin-left: 10px;
+    color: rgb(7, 7, 209);
+}
+.roomImage{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.requestCallBtn{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(7, 97, 222);
+    width: 180px;
+    height: 40px;
+}
+
+
+
+.blur {
+    filter: blur(4px);
+    /* pointer-events: none; */
+}
+
+
+
+
+
+/* Styling for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Styling for the close button */
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.dialog-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 600px;
+    
+
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+
+ 
+
+#popupDialog {
+    width: 1100px;
+    height: 610px;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+}
+
+#popupContent {
+    width: 1000px;
+    height: 550px;
+}
+
+#popupDialog button {
+    margin-top: 10px;
+}
+
+.ul1{
+    display: none;
+}
+
+footer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.footerLinks{
+    display: flex;
+    justify-content: end;
+}
+
+.socialMedialLinksList{
+    margin-top: 30px;
+    margin-left: -38px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.footerLinksList{
+    list-style: none;
+    line-height: 28px;
+}
+
+.footerLinksList > li > a{
+    color: rgb(71, 42, 165);
+}
+
+.linkListContainer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hotelDetailsContainer{
+    margin-left: 55px; 
+    margin-top: 35px;
+}
+
+.hotelImage{
+    width: 300px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .navBar{
+        justify-content: end;
+    }   
+}
+
+@media screen and (max-width: 957px) {
+    .descriptionContainer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .hotelDetailsContainer{
+       
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .cardContainer{
+        grid-template-columns : repeat(2, minmax(0, 1fr));
+    }
+    .ul{
+        display: none;
+    }
+    .ul1{
+        display: grid;
+    }
+    
+}
+
+@media screen and (max-width: 788px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .headerListContainer{
+        justify-content: start;
+        margin-left: -25px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .navBar{
+        margin-top: -80px;
+    }
+
+    .wallpaper{
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    .cardContainer{
+        grid-template-columns : repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .navBar{
+        margin-top: 0px;
+        margin-left: -5px;
+        margin-bottom: 5px;
+        justify-content: start;
+    }
+
+    footer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .button{
+        border-radius: 10px;
+        width: 250px;
+        height: 45px;
+        background-color: rgb(12, 12, 193);
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .linkListContainer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    body{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .wallpaper{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .headerListContainer{
+        display: none;
+    }
+
+    .hotelName{
+        width: 250px;
+        font-size: 21px;
+    }
+
+    .hotelDetailsContainer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+         margin-left: -5px; 
+    }
+}
+
+@media screen and (max-width: 297px) {
+    #selectARoom{
+        font-size: 20px;
+    }
+
+    .hotelDetailsContainer{
+        width: 200px;
+    }
+
+    .hotelImage{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 252px) {
+    .hotelDetailsContainer{
+        width: 100px;
+    }
+
+    .hotelImage{
+        width: 130px;
+    }
+}
+
+
+
+
+
+
+
+

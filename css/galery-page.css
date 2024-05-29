@@ -1,0 +1,191 @@
+body{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+/* .headerContainer{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+} */
+
+.hotelName{
+    /* border: 2px solid rgb(118, 118, 232); */
+    color: rgb(26, 143, 143);
+    font-weight: bold;
+    width: 350px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerList{
+    display: flex;
+    list-style: none;
+}
+
+.headerList > li {
+  
+    font-size: 15px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.headerList{
+    display: flex;
+    list-style: none;
+}
+
+.heading2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentContainer{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+ .galleryCategoryListContainer{
+    margin-top: 50px;
+    
+} 
+
+.galleryListCategoryName{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.categoryList{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.category{
+    margin-left: 20px;
+}
+
+.imageContainer{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    gap: 10px;
+    position: relative;
+}
+
+.photosVideosCategory{
+    display: flex;
+    justify-content: center;
+    gap: 460px;
+    margin-top: 20px;
+}
+
+.image{
+    width: 400px;
+    height: 400px;
+}
+
+.card{
+    border: none;
+    padding-top: 20px;
+}
+
+/* .footerLinks{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+} */
+
+
+@media screen and (max-width: 1130px) {
+    .photosVideosCategory{
+        display: flex;
+        justify-content: center;
+        gap: 260px;
+        margin-top: 20px;
+    }
+
+    .imageContainer{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navBar{
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contentContainer{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    header{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .headerListContainer{
+        justify-content: start;
+        margin-left: -25px;
+        margin-top: 20px;
+    }
+
+    .navBar{
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    .photosVideosCategory{
+        gap: 60px;
+    }
+
+    .imageContainer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .navBar{
+        margin-top: 0px;
+        justify-content: start;
+    }
+
+    .headerListContainer{
+        margin-left: -25px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    body{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .hotelName{
+        width: 250px;
+        font-size: 22px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .headerList > li {
+        font-size: 12px;
+    }
+
+    .topicPhotos{
+        font-size: 15px;
+    }
+
+    .topicVideos{
+        font-size: 10px;
+    }
+}

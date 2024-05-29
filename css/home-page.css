@@ -1,0 +1,356 @@
+body{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startpic{
+    display: flex;
+    width: 1400px;
+    height: 600px;
+}
+
+.startPicContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerListContainer{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.hotelName{
+    /* border: 2px solid rgb(118, 118, 232); */
+    color: rgb(26, 143, 143);
+    font-weight: bold;
+    width: 350px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerList{
+    display: flex;
+    list-style: none;
+}
+
+.headerList > li {
+  
+    font-size: 15px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.dropDown{
+    opacity: 50%;
+}
+
+.whereTo{
+    font-size: 17px;
+}
+
+.offerLabelContainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 128, 167);
+    height: 80px;
+}
+
+.offer{
+    padding-top: 8px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+.heading2Container{
+    margin-top: 30px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading2{
+    color: rgb(4, 4, 157);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.sunnyStayParagraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer{
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1Container{
+    margin-left: 23px;
+    margin-top: 100px;
+}
+
+.imageCardContainer{
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    gap: 10px;
+    position: relative;
+}
+
+.imageCard1Container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    gap: 10px;
+    position: relative;
+}
+
+/* .card{
+    height: 700px;
+} */
+
+.description{
+    font-weight: bold;
+    opacity: 0;
+    color: rgb(4, 10, 11);
+    /* margin-top: -40px; */
+    font-size: 18px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(130, 116, 116, 0.7); */
+    padding: 10px;
+    border-radius: 3px;
+    transition: top 1s; /* Fade in over 1 second */
+}
+
+a :hover{
+    .description{
+        font-size: 22px;
+        opacity: 100%;
+        top: 50%;  
+    }
+    img{
+        opacity: 40%;
+        
+    }
+}
+
+/* .button{
+    border-radius: 10px;
+    width: 400px;
+    height: 45px;
+    background-color: rgb(12, 12, 193);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+} */
+
+.requestCallBtn{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(7, 97, 222);
+    width: 180px;
+    height: 40px;
+}
+
+footer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.footerLinks{
+    display: flex;
+    justify-content: end;
+}
+
+.socialMedialLinksList{
+    margin-top: 30px;
+    margin-left: -38px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.footerLinksList{
+    list-style: none;
+    line-height: 28px;
+}
+
+.footerLinksList > li > a{
+    color: rgb(71, 42, 165);
+}
+
+.linkListContainer{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .navBar{
+        align-items: center;
+        justify-content: start;
+    }
+    
+    
+}
+
+@media screen and (max-width: 915px) {
+    .imageCardContainer{
+        grid-template-columns : repeat(2, minmax(0, 1fr));
+    }
+
+    .imageCard1Container{
+        grid-template-columns : repeat(2, minmax(0, 1fr));
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 840px) {
+    .searchbarContainer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    header{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .headerListContainer{
+        justify-content: start;
+    }
+
+    .offerLabelContainer{
+        display: none;
+    }
+
+    textarea{
+        columns: 50;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .imageCardContainer{
+        grid-template-columns : repeat(1, minmax(0, 1fr));
+    }
+
+    .imageCard1Container{
+        grid-template-columns : repeat(1, minmax(0, 1fr));
+    }
+    
+    .searchbarContainer{
+        display: none;
+    }
+
+    footer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .startpic{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .linkListContainer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .footerLinks{
+        justify-content: start;
+    }
+
+    .hotelName{
+        width: 250px;
+        font-size: 22px;
+    }
+
+    .headerList{
+        display: none;
+    }
+
+    .startpic{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .hotelName{
+        width: 150px;
+    }
+
+    .paraHowCanWeHelp{
+        font-size: 14px;
+    }
+
+    .requestCallBtn{
+        width: 180px;
+        height: 40px;
+    }
+
+    .requestACall{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .socialMedialLinksList{
+        display: grid;
+    }
+
+    .socialMediaLinksContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .startpic{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .hotelName{
+        width: 100px;
+    }
+
+    .section1Container{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .hotelName{
+        width: 50px;
+        font-size: 16px;
+    }
+}
